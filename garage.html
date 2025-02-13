@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms and Validations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="garage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="garage.css">
+</head>
+<body>
+  <h1>Conestoga Garage Sale </h1>
+  <h2>Raising money for The Frontline Fund</h2>
+  <form name="myform" method="Post" onsubmit="return formSubmit();"  action="" novalidate>
+    <label>Name</label>
+    <input id="name" placeholder="Name" type="text" name="name"><br/>
+
+    <label>Email</label>
+    <input id="email" placeholder="email@gmail.com" type="email" name="email"><br/>
+
+    <label>Credit Card Number</label>
+    <input id="CreditCardNumber" placeholder="card number" type="text" pattern="\d{4}-\d{4}-\d{4}-\d{4}" name="credit card number"><br/>
+
+    <label>Credit Card Expiry Month</label>
+    <input id="CreditCardExpiryMonth" placeholder="expirymonth"  pattern = "[A-Za-z]{3}" name="expiry month"><br/>
+
+    <label>Credit Card Expiry Year</label>
+    <input id="CreditcardExpiryYear" placeholder="expiry year" type="year" pattern = "\d{4}" name="expiry year"><br/>
+  
+  <h2>Buy generously</h2>
+  <label>Number of Donuts($5)</label>
+  <input id="Quantity" placeholder="Quantity" type="text" name="Quantity"><br/>
+
+  <label>Number of Chocolate($15)</label>
+  <input id="Quantity" placeholder="Quantity" type="text" name="Quantity"><br/>
+
+  <label>Number of Water Bottles($10)</label>
+  <input id="Quantity" placeholder="Quantity" type="text" name="Quantity"><br/>
+
+  <label>Number of Pens ($2)</label>
+  <input id="Quantity" placeholder="Quantity" type="text" name="Quantity"><br/>
+
+  <label>Number of Juice ($20)</label>
+  <input id="Quantity" placeholder="Quantity" type="text" name="Quantity"><br/>
+
+  
+  <br/><br/>
+
+
+    <input type="submit" value="Submit">
+    <p id="errors"></p>
+  </form>  
+  
+  <div class="formData">
+    <p id="formResult">This is where the form data will show up.</p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
